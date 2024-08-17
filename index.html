@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-left">
+        <div class="logo">
+            FUMO
+        </div>
+    </div>
+    <div id="page-right">
+        <div class="intro">
+            This is <strong>not</strong> a real online service! You know you need something
+            <br>like this in your life to help you realize your deepest dreams.
+            <br>Sign up <em>now</em> to get started.
+            <br>
+            <br>You <em>know</em> you want to.
+        </div>
+        <div class="sign-up">
+            <form action="./index.html" method="post">
+                <div class="fill-in">
+                    <h2>Let's do this!</h2>
+                    <div class="row">
+                        <div class="user-input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="Deez" required>
+                        </div>
+                        <div class="user-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Nutz" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="user-input">
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name="mail" placeholder="omgwtfbbq@everyone.com" pattern=".*@.*\.com" onchange="this.className=(this.value=='')?'':'visited';" required>
+                        </div>
+                        <div class="user-input">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" id="phone" name="phone" placeholder="362436" pattern="(\d{8})" onchange="this.className=(this.value=='')?'':'visited';" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="user-input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" onchange="this.className=(this.value=='')?'':'visited';" required>
+                        </div>
+                        <div class="user-input">
+                            <label for="password-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="password-confirm" name="password-confirm" onchange="this.className=(this.value=='')?'':'visited';" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </div>
+        <div class="log-in">
+            Already have an account? <a href="https://youtu.be/CJ-CNc2mQS4?si=F_yPfYWlClI_GXxp">Log in</a>
+        </div>
+    </div>
+</body>
+</html>

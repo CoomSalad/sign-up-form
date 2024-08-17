@@ -1,0 +1,156 @@
+:root {
+    --page-right-color: azure;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link,
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    color: aqua;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: white;
+    height: 1.6em;
+    width: 16em;
+}
+
+input:focus {
+    border: 2px solid darkblue;
+    background-color: lightblue;
+}
+
+input.visited {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid greenyellow;
+}
+
+#page-left {
+    width: 35%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(75, 75, 75, 0.4)), url("images/fumo-fumo-meme.gif");
+    background-size: cover;
+}
+
+#page-right {
+    width: 65%;
+    background-color: var(--page-right-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#page-left .logo {
+    margin-top: 2em;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: white;
+    font-size: 6em;
+    font-weight: 1000;
+    opacity: 100%;
+}
+
+#page-right .intro {
+    padding: 2em;
+    flex: 3 1 auto;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#page-right .sign-up {
+    flex: 4 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-right .log-in {
+    padding: 2em;
+    flex: 4 1 auto;
+}
+
+.sign-up form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.sign-up .fill-in {
+    flex: 4 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 12em 2em 3em;
+    background-color: white;
+    box-shadow: 0 6px 12px 1px gray;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.sign-up .submit-button {
+    flex: 1 1 auto;
+    padding: 2em 0 0 3em;
+}
+
+.fill-in h2 {
+    margin: 0;
+}
+
+.fill-in .row {
+    display: flex;
+    flex: 1 1 auto;
+    gap: 3em;
+}
+
+.fill-in .row .user-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.fill-in .row .user-input label {
+    font-size: 0.8em;
+    flex: 1 1 auto;
+}
+
+.fill-in .row .user-input input {
+    flex: 2 1 auto;
+}
+
+.sign-up .submit-button button {
+    padding: 1em 4em 1em 4em;
+    border: 2px solid darkblue;
+    border-radius: 0.6em;
+    background-color: darkblue;
+    color: white;
+}
+
+.sign-up .submit-button button:hover {
+    padding: 1em 4em 1em 4em;
+    background-color: white;
+    color: darkblue;
+    cursor: pointer;
+}
